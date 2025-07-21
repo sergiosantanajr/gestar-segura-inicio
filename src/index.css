@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Gestar Segura Design System - Feminino técnico e confiável
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Base colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 200 15% 25%;
 
+    /* Brand colors - Feminino técnico */
+    --salmon: 15 85% 75%;        /* Salmão claro */
+    --salmon-light: 15 90% 85%;  /* Salmão mais claro */
+    --lilac: 280 40% 80%;        /* Lilás suave */
+    --lilac-light: 280 30% 90%;  /* Lilás mais claro */
+    --teal: 190 60% 35%;         /* Azul petróleo */
+    --teal-light: 190 45% 85%;   /* Azul petróleo claro */
+    
+    /* Semantic colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 200 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 200 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 190 60% 35%;      /* Azul petróleo principal */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 190 45% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 15 85% 75%;     /* Salmão como secundário */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 15 90% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 280 40% 80%;       /* Lilás como accent */
+    --accent-foreground: 200 15% 25%;
+    --accent-light: 280 30% 90%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 200 20% 95%;
+    --muted-foreground: 200 10% 45%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 200 20% 90%;
+    --input: 200 20% 95%;
+    --ring: 190 60% 35%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--teal)) 0%, hsl(var(--lilac)) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(var(--salmon)) 0%, hsl(var(--teal)) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--lilac-light)) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--teal) / 0.1);
+    --shadow-card: 0 8px 32px hsl(var(--teal) / 0.15);
+    --shadow-floating: 0 16px 48px hsl(var(--teal) / 0.2);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 

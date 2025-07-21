@@ -48,7 +48,7 @@ const FloatingCTA = () => {
           
           <div className="space-y-3">
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary">R$ 39,90</div>
+              <div className="text-2xl font-bold text-primary">R$ 59,99</div>
               <div className="text-xs text-muted-foreground line-through">De R$ 97,00</div>
             </div>
             
@@ -59,9 +59,12 @@ const FloatingCTA = () => {
             </ul>
             
             <Button 
+              asChild
               className="w-full bg-gradient-cta text-white font-semibold transition-all duration-300 transform hover:scale-105"
             >
-              Garantir Acesso Agora
+              <a href="https://pay.kiwify.com.br/VXVVnhg" target="_blank" rel="noopener noreferrer">
+                Garantir Acesso Agora
+              </a>
             </Button>
             
             <p className="text-xs text-center text-muted-foreground">

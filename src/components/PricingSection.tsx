@@ -125,7 +125,7 @@ const PricingSection = () => {
                     De R$ 97,00 por apenas
                   </div>
                   <div className="text-5xl font-bold text-primary mb-2">
-                    R$ 39<span className="text-xl">,90</span>
+                    R$ 59<span className="text-xl">,99</span>
                   </div>
                   <div className="text-sm text-muted-foreground">
                     Pagamento único • Acesso vitalício
@@ -146,10 +146,13 @@ const PricingSection = () => {
 
                 {/* CTA Button */}
                 <Button 
+                  asChild
                   size="lg" 
                   className="w-full bg-gradient-cta text-white font-semibold text-lg py-6 mb-6 shadow-floating hover:shadow-card transition-all duration-300 transform hover:scale-105"
                 >
-                  Quero garantir agora meu acesso
+                  <a href="https://pay.kiwify.com.br/VXVVnhg" target="_blank" rel="noopener noreferrer">
+                    Quero garantir agora meu acesso
+                  </a>
                 </Button>
 
                 {/* Payment methods */}

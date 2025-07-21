@@ -25,12 +25,15 @@ const HeroSection = () => {
 
             {/* CTA Principal */}
             <div className="space-y-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-cta text-white font-semibold text-lg px-8 py-6 shadow-floating hover:shadow-card transition-all duration-300 transform hover:scale-105"
-              >
+            <Button 
+              asChild
+              size="lg" 
+              className="bg-gradient-cta text-white font-semibold text-lg px-8 py-6 shadow-floating hover:shadow-card transition-all duration-300 transform hover:scale-105"
+            >
+              <a href="https://pay.kiwify.com.br/VXVVnhg" target="_blank" rel="noopener noreferrer">
                 Quero acessar o conteúdo do Gestar Segura
-              </Button>
+              </a>
+            </Button>
               
               <p className="text-sm text-muted-foreground">
                 🔒 Acesso imediato e vitalício

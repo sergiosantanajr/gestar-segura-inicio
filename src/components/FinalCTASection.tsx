@@ -53,11 +53,14 @@ const FinalCTASection = () => {
           {/* Final CTA */}
           <div className="space-y-6">
             <Button 
+              asChild
               size="lg" 
               className="bg-white text-primary font-bold text-xl px-12 py-8 shadow-floating hover:shadow-card transition-all duration-300 transform hover:scale-105 group"
             >
-              Quero me preparar com o Gestar Segura
-              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+              <a href="https://pay.kiwify.com.br/VXVVnhg" target="_blank" rel="noopener noreferrer">
+                Quero me preparar com o Gestar Segura
+                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+              </a>
             </Button>
             
             <div className="space-y-2">
@@ -65,7 +68,7 @@ const FinalCTASection = () => {
                 ✨ Acesso imediato • 💎 Conteúdo vitalício • 🔒 Compra 100% segura
               </p>
               <p className="text-white/80">
-                Apenas R$ 39,90 • Garantia de 7 dias
+                Apenas R$ 59,99 • Garantia de 7 dias
               </p>
             </div>
           </div>
